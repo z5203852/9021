@@ -1,0 +1,168 @@
+TEST 1 BEGIN
+$ echo test1.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test1.txt
+The Sirs are: Tri
+There are 2 solutions.
+TEST 1 END
+
+TEST 2 BEGIN
+$ echo test2.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test2.txt
+The Sirs are: Andrew Ingi Nadine
+There are 3 solutions.
+TEST 2 END
+
+TEST 3 BEGIN
+$ echo test3.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test3.txt
+The Sirs are: Adrian Valens
+There is a unique solution:
+Sir Adrian is a Knight.
+Sir Valens is a Knave.
+TEST 3 END
+
+TEST 4 BEGIN
+$ echo test4.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test4.txt
+The Sirs are: Jack Jimmy
+There is no solution.
+TEST 4 END
+
+TEST 5 BEGIN
+$ echo test5.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test5.txt
+The Sirs are: Jacky Jimmy
+There is a unique solution:
+Sir Jacky is a Knight.
+Sir Jimmy is a Knave.
+TEST 5 END
+
+TEST 6 BEGIN
+$ echo test6.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test6.txt
+The Sirs are: Christian Helena Patrick
+There are 8 solutions.
+TEST 6 END
+
+TEST 7 BEGIN
+$ echo test7.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test7.txt
+The Sirs are: Henry Jane
+There are 2 solutions.
+TEST 7 END
+
+TEST 8 BEGIN
+$ echo test8.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test8.txt
+The Sirs are: Mandy Paul Peter Rob
+There are 5 solutions.
+TEST 8 END
+
+TEST 9 BEGIN
+$ echo test9.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test9.txt
+The Sirs are: Naomi
+There is no solution.
+TEST 9 END
+
+TEST 10 BEGIN
+$ echo test10.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test10.txt
+The Sirs are: Elizabeth Peter Simon
+There is a unique solution:
+Sir Elizabeth is a Knave.
+Sir Peter is a Knave.
+Sir Simon is a Knave.
+TEST 10 END
+
+TEST 11 BEGIN
+$ echo test11.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test11.txt
+The Sirs are: Alen Carol Christina
+There is no solution.
+TEST 11 END
+
+TEST 12 BEGIN
+$ echo test12.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test12.txt
+The Sirs are: Henry John Tina
+There is a unique solution:
+Sir Henry is a Knave.
+Sir John is a Knave.
+Sir Tina is a Knight.
+TEST 12 END
+
+TEST 13 BEGIN
+$ echo test13.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test13.txt
+The Sirs are: Andrew Christina Mary
+There is a unique solution:
+Sir Andrew is a Knave.
+Sir Christina is a Knight.
+Sir Mary is a Knave.
+TEST 13 END
+
+TEST 14 BEGIN
+$ echo test14.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test14.txt
+The Sirs are: Arun Jane Luke
+There are 2 solutions.
+TEST 14 END
+
+TEST 15 BEGIN
+$ echo test15.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test15.txt
+The Sirs are: Christopher Elisabeth Henry Luke
+There is a unique solution:
+Sir Christopher is a Knave.
+Sir Elisabeth is a Knight.
+Sir Henry is a Knave.
+Sir Luke is a Knave.
+TEST 15 END
+
+TEST 16 BEGIN
+$ echo test16.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test16.txt
+The Sirs are: Anita Carol Christina Jenny
+There is no solution.
+TEST 16 END
+
+TEST 17 BEGIN
+$ echo test17.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test17.txt
+The Sirs are: Annabelle Camila Carol Fiona Jessica Josie Juliet Madeline Maggie
+There are 16 solutions.
+TEST 17 END
+
+TEST 18 BEGIN
+$ echo test18.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test18.txt
+The Sirs are: Camille Deylan Jado Jeanie Jeannie Meryn Neil Rifka Rosali Thorsten
+There are 36 solutions.
+TEST 18 END
+
+TEST 19 BEGIN
+$ echo test19.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test19.txt
+The Sirs are: Cassius Corey Grace Hannah Lydia Mohammed Nixon Otto Penelope Sarah
+There are 44 solutions.
+TEST 19 END
+
+TEST 20 BEGIN
+$ echo test20.txt | python3 knights_and_knaves.py
+Which text file do you want to use for the puzzle? test20.txt
+The Sirs are: Allison Claire Elise Emma Esther Isabel Lauren Lillian Margaret Natalie Sofia
+There is a unique solution:
+Sir Allison is a Knight.
+Sir Claire is a Knight.
+Sir Elise is a Knave.
+Sir Emma is a Knight.
+Sir Esther is a Knave.
+Sir Isabel is a Knave.
+Sir Lauren is a Knave.
+Sir Lillian is a Knight.
+Sir Margaret is a Knave.
+Sir Natalie is a Knight.
+Sir Sofia is a Knight.
+TEST 20 END
+
