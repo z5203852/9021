@@ -1,0 +1,156 @@
+TEST 1 BEGIN
+$ python3 -c "from tangram import *; file = open('correct_pieces_1.xml'); coloured_pieces = available_coloured_pieces(file); r1 = are_valid(coloured_pieces); file = open('correct_pieces_2.xml'); coloured_pieces = available_coloured_pieces(file); r2 = are_valid(coloured_pieces); file = open('correct_pieces_3.xml'); coloured_pieces = available_coloured_pieces(file); r3 = are_valid(coloured_pieces); file = open('incorrect_pieces_1.xml'); coloured_pieces = available_coloured_pieces(file); r4 = are_valid(coloured_pieces); print(r1 and r2 and r3 and not r4)" 
+True
+
+TEST 1 END
+
+TEST 2 BEGIN
+$ python3 -c "from tangram import *; file = open('correct_pieces_2.xml'); coloured_pieces = available_coloured_pieces(file); r1 = are_valid(coloured_pieces); file = open('correct_pieces_3.xml'); coloured_pieces = available_coloured_pieces(file); r2 = are_valid(coloured_pieces); file = open('correct_pieces_4.xml'); coloured_pieces = available_coloured_pieces(file); r3 = are_valid(coloured_pieces); file = open('incorrect_pieces_2.xml'); coloured_pieces = available_coloured_pieces(file); r4 = are_valid(coloured_pieces); print(r1 and r2 and r3 and not r4)"
+True
+
+TEST 2 END
+
+TEST 3 BEGIN
+$ python3 -c "from tangram import *; file = open('correct_pieces_3.xml'); coloured_pieces = available_coloured_pieces(file); r1 = are_valid(coloured_pieces); file = open('correct_pieces_4.xml'); coloured_pieces = available_coloured_pieces(file); r2 = are_valid(coloured_pieces); file = open('correct_pieces_5.xml'); coloured_pieces = available_coloured_pieces(file); r3 = are_valid(coloured_pieces); file = open('incorrect_pieces_3.xml'); coloured_pieces = available_coloured_pieces(file); r4 = are_valid(coloured_pieces); print(r1 and r2 and r3 and not r4)" 
+True
+
+TEST 3 END
+
+TEST 4 BEGIN
+$ python3 -c "from tangram import *; file = open('correct_pieces_4.xml'); coloured_pieces = available_coloured_pieces(file); r1 = are_valid(coloured_pieces); file = open('correct_pieces_5.xml'); coloured_pieces = available_coloured_pieces(file); r2 = are_valid(coloured_pieces); file = open('correct_pieces_6.xml'); coloured_pieces = available_coloured_pieces(file); r3 = are_valid(coloured_pieces); file = open('incorrect_pieces_4.xml'); coloured_pieces = available_coloured_pieces(file); r4 = are_valid(coloured_pieces); print(r1 and r2 and r3 and not r4)" 
+True
+
+TEST 4 END
+
+TEST 5 BEGIN
+$ python3 -c "from tangram import *; file = open('correct_pieces_5.xml'); coloured_pieces = available_coloured_pieces(file); r1 = are_valid(coloured_pieces); file = open('correct_pieces_6.xml'); coloured_pieces = available_coloured_pieces(file); r2 = are_valid(coloured_pieces); file = open('correct_pieces_1.xml'); coloured_pieces = available_coloured_pieces(file); r3 = are_valid(coloured_pieces); file = open('incorrect_pieces_5.xml'); coloured_pieces = available_coloured_pieces(file); r4 = are_valid(coloured_pieces); print(r1 and r2 and r3 and not r4)" 
+True
+
+TEST 5 END
+
+TEST 6 BEGIN
+$ python3 -c "from tangram import *; file = open('correct_pieces_6.xml'); coloured_pieces = available_coloured_pieces(file); r1 = are_valid(coloured_pieces); file = open('correct_pieces_1.xml'); coloured_pieces = available_coloured_pieces(file); r2 = are_valid(coloured_pieces); file = open('correct_pieces_2.xml'); coloured_pieces = available_coloured_pieces(file); r3 = are_valid(coloured_pieces); file = open('incorrect_pieces_6.xml'); coloured_pieces = available_coloured_pieces(file); r4 = are_valid(coloured_pieces); print(r1 and r2 and r3 and not r4)" 
+True
+
+TEST 6 END
+
+TEST 7 BEGIN
+$ python3 -c "from tangram import *; file = open('pieces_1.xml'); coloured_pieces_1 = available_coloured_pieces(file); file = open('pieces_1_a.xml'); coloured_pieces_2 = available_coloured_pieces(file); r1 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_1_b.xml'); coloured_pieces_2 = available_coloured_pieces(file); r2 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_diff_1.xml'); coloured_pieces_2 = available_coloured_pieces(file); r3 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); print(r1 and r2 and not r3)"
+True
+
+TEST 7 END
+
+TEST 8 BEGIN
+$ python3 -c "from tangram import *; file = open('pieces_2.xml'); coloured_pieces_1 = available_coloured_pieces(file); file = open('pieces_2_a.xml'); coloured_pieces_2 = available_coloured_pieces(file); r1 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_2_b.xml'); coloured_pieces_2 = available_coloured_pieces(file); r2 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_diff_2.xml'); coloured_pieces_2 = available_coloured_pieces(file); r3 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); print(r1 and r2 and not r3)"
+True
+
+TEST 8 END
+
+TEST 9 BEGIN
+$ python3 -c "from tangram import *; file = open('pieces_3.xml'); coloured_pieces_1 = available_coloured_pieces(file); file = open('pieces_3_a.xml'); coloured_pieces_2 = available_coloured_pieces(file); r1 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_3_b.xml'); coloured_pieces_2 = available_coloured_pieces(file); r2 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_diff_3.xml'); coloured_pieces_2 = available_coloured_pieces(file); r3 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); print(r1 and r2 and not r3)"
+True
+
+TEST 9 END
+
+TEST 10 BEGIN
+$ python3 -c "from tangram import *; file = open('pieces_4.xml'); coloured_pieces_1 = available_coloured_pieces(file); file = open('pieces_4_a.xml'); coloured_pieces_2 = available_coloured_pieces(file); r1 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_4_b.xml'); coloured_pieces_2 = available_coloured_pieces(file); r2 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_diff_4.xml'); coloured_pieces_2 = available_coloured_pieces(file); r3 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); print(r1 and r2 and not r3)"
+True
+
+TEST 10 END
+
+TEST 11 BEGIN
+$ python3 -c "from tangram import *; file = open('pieces_5.xml'); coloured_pieces_1 = available_coloured_pieces(file); file = open('pieces_5_a.xml'); coloured_pieces_2 = available_coloured_pieces(file); r1 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_5_b.xml'); coloured_pieces_2 = available_coloured_pieces(file); r2 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_diff_5.xml'); coloured_pieces_2 = available_coloured_pieces(file); r3 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); print(r1 and r2 and not r3)"
+True
+
+TEST 11 END
+
+TEST 12 BEGIN
+$ python3 -c "from tangram import *; file = open('pieces_6.xml'); coloured_pieces_1 = available_coloured_pieces(file); file = open('pieces_6_a.xml'); coloured_pieces_2 = available_coloured_pieces(file); r1 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_6_b.xml'); coloured_pieces_2 = available_coloured_pieces(file); r2 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_diff_6.xml'); coloured_pieces_2 = available_coloured_pieces(file); r3 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); print(r1 and r2 and not r3)"
+True
+
+TEST 12 END
+
+TEST 13 BEGIN
+$ python3 -c "from tangram import *; file = open('pieces_7.xml'); coloured_pieces_1 = available_coloured_pieces(file); file = open('pieces_7_a.xml'); coloured_pieces_2 = available_coloured_pieces(file); r1 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_7_b.xml'); coloured_pieces_2 = available_coloured_pieces(file); r2 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_diff_7.xml'); coloured_pieces_2 = available_coloured_pieces(file); r3 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); print(r1 and r2 and not r3)"
+True
+
+TEST 13 END
+
+TEST 14 BEGIN
+$ python3 -c "from tangram import *; file = open('pieces_8.xml'); coloured_pieces_1 = available_coloured_pieces(file); file = open('pieces_8_a.xml'); coloured_pieces_2 = available_coloured_pieces(file); r1 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_8_b.xml'); coloured_pieces_2 = available_coloured_pieces(file); r2 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); file = open('pieces_diff_8.xml'); coloured_pieces_2 = available_coloured_pieces(file); r3 = are_identical_sets_of_coloured_pieces(coloured_pieces_1, coloured_pieces_2); print(r1 and r2 and not r3)"
+True
+
+TEST 14 END
+
+TEST 15 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_B.xml'); shape = available_coloured_pieces(file); file = open('tangram_B.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_B_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_B_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 15 END
+
+TEST 16 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_C.xml'); shape = available_coloured_pieces(file); file = open('tangram_C.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_C_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_C_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 16 END
+
+TEST 17 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_D.xml'); shape = available_coloured_pieces(file); file = open('tangram_D.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_D_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_D_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 17 END
+
+TEST 18 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_F.xml'); shape = available_coloured_pieces(file); file = open('tangram_F.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_F_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_F_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 18 END
+
+TEST 19 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_H.xml'); shape = available_coloured_pieces(file); file = open('tangram_H.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_H_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_H_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 19 END
+
+TEST 20 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_I.xml'); shape = available_coloured_pieces(file); file = open('tangram_I.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_I_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_I_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 20 END
+
+TEST 21 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_J.xml'); shape = available_coloured_pieces(file); file = open('tangram_J.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_J_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_J_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 21 END
+
+TEST 22 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_K.xml'); shape = available_coloured_pieces(file); file = open('tangram_K.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_K_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_K_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 22 END
+
+TEST 23 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_L.xml'); shape = available_coloured_pieces(file); file = open('tangram_L.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_L_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_L_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 23 END
+
+TEST 24 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_M.xml'); shape = available_coloured_pieces(file); file = open('tangram_M.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_M_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_M_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 24 END
+
+TEST 25 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_N.xml'); shape = available_coloured_pieces(file); file = open('tangram_N.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_N_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_N_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 25 END
+
+TEST 26 BEGIN
+$ python3 -c "from tangram import *; file = open('shape_O.xml'); shape = available_coloured_pieces(file); file = open('tangram_O.xml'); tangram = available_coloured_pieces(file); r1 = is_solution(tangram , shape); file = open('tangram_O_a.xml'); tangram = available_coloured_pieces(file); r2 = is_solution(tangram , shape); file = open('tangram_O_b.xml'); tangram = available_coloured_pieces(file); r3 = is_solution(tangram , shape); print(r1 and not r2 and not r3)"
+True
+
+TEST 26 END
+
